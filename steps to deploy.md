@@ -114,4 +114,26 @@ Connect using SSH and run:
 - sudo apt install apache2 -y
 
 Test:
-- http://<VM-public-ip>
+- http://<<VM-public-ip>>
+
+### Windows Application VM:
+  | Setting | Value |
+  |------|------|
+  | Name | vm-app-win |
+  | Image | Windows Server 2022 |
+  | Size | B1s |
+  | Subnet | Appsubnet |
+  | Public IP | Enabled (temporary) |
+
+Connect using RDP
+Install IIS:
+- Install-WindowsFeature -name Web-Server -IncludeManagementTools
+
+---
+
+## Step 5:- Create Azure Load Balancer
+  | Setting | Value |
+  |-----|-----|
+  | Name | azure-vm-lb |
+  | Type | Public |
+  | SKU | Basic |
