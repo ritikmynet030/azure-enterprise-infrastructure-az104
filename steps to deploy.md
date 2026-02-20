@@ -131,9 +131,48 @@ Install IIS:
 
 ---
 
-## Step 5:- Create Azure Load Balancer
+## ✅ Step 5:- Create Azure Load Balancer
   | Setting | Value |
   |-----|-----|
   | Name | azure-vm-lb |
   | Type | Public |
   | SKU | Basic |
+  | Backendpool | vm-web-linux |
+  | Health Probe | Port 80 |
+  | Rule | http port 80 |
+
+### Test using Load Balancer Public IP.
+
+---
+
+## ✅ Step 6:- Create Storage & Backup
+
+### Create Storage Account:
+  | Setting | Value |
+  |-----|-----|
+  | Name | stenterprisebackup |
+  | Perfromance | Standard |
+  | Redundancy | LRS |
+
+### Create Containers:
+- VM-Backups
+- logs
+
+### Lifecycle Management
+
+Rule:
+- Hot → Cool after 30 days
+- Cool → Archive after 90 days
+
+### Enable Soft Delete:
+Storage Account → Data Protection → Enable Blob Soft Delete.
+
+### Configure Backup
+Create Recovery Services Vault:
+- Name: rsv-enterprise
+
+Backup → Azure VM → Select both VMs → Daily backup policy.
+
+
+
+
