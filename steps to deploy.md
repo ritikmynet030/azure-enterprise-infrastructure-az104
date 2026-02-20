@@ -173,6 +173,48 @@ Create Recovery Services Vault:
 
 Backup → Azure VM → Select both VMs → Daily backup policy.
 
+---
 
+## ✅ Step 7:— Monitoring & Alerts
 
+### Create Log Analytics Workspace
+- Name: law-enterprise
 
+### Enable VM Insights
+
+VM → Insights → Enable monitoring.
+
+### Configure Diagnostic Settings
+Send logs from:
+- Virtual Machines
+- NSG
+- Load Balancer
+
+Destinations:
+- Log Analytics Workspace
+
+## Create Alerts rule:
+Azure Monitor → Alerts → Create Rule
+
+### Condition:
+- CPU Percentage > 80%
+
+### Action:
+- Email Notification
+
+---
+
+## ✅ Step 7:— Hybrid Connectivity (Simulation)
+
+### Point-to-Site VPN
+
+Create VPN Gateway:
+  | Setting | Value |
+  |-----|-----|
+  | GatewaySKU | VpnGw1 |
+  | Tunnel Type | IKEv2 |
+  | Address Pool | 172.16.0.0/24 |
+
+Download VPN client and connect.
+
+Test: ping VM private IP
