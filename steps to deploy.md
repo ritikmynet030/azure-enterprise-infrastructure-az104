@@ -77,4 +77,41 @@ Assign:
 Create bidirectional peering:
 - vnet-hub ↔ vnet-prod
 - Enable traffic forwarding
-  
+
+---
+
+## Create Network Security Groups
+
+### nsg-web
+
+Allow:
+- SSH 22
+- HTTP 80
+
+### nsg-app
+
+Allow:
+- RDP 3389
+- VirtualNetwork traffic
+
+Associate NSGs with respective subnets.
+
+---
+
+## ✅ Step 4:— Deploy Virtual Machines
+
+### Linux Web Server VM:
+  | Setting | Value |
+  |------|------|
+  | Name | vm-web-linux |
+  | Image | Ubuntu 22.04 LTS |
+  | Size | B1s |
+  | Subnet | Websubnet |
+  | Public IP | Enabled (temporary) |
+
+Connect using SSH and run:
+- sudo apt update
+- sudo apt install apache2 -y
+
+Test:
+- http://<VM-public-ip>
