@@ -31,7 +31,7 @@ Create:
 Resource Group → Access Control (IAM)
 
 | Role | Assignment |
-|---|---|
+|-----|-----|
 | Reader | auditor-user |
 | Virtual Machine Contributor | ops-user |
 
@@ -55,3 +55,5 @@ Assign:
   |-----|-----|
   | Name | vnet-hub |
   | Address space | 10.0.0.0/16 |
+
+### Subnets:
