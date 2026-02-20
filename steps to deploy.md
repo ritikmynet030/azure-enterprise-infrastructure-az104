@@ -2,7 +2,7 @@
 
 ---
 
-## ✅ Step 1:— Create Resource Group
+## 🔹 Step 1:— Create Resource Group
 
 1. Go to Azure Portal
 2. Search **Resource Groups**
@@ -15,7 +15,7 @@
 
 ---
 
-## ✅ Step 2:— Identity & Governance (IAM)
+## 🔹 Step 2:— Identity & Governance (IAM)
 
 ### Create Users (Optional)
 
@@ -49,7 +49,7 @@ Assign:
 
 ---
 
-## ✅ Step 3:— Hub-Spoke Networking
+## 🔹 Step 3:— Hub-Spoke Networking
 
 ### Create HUB VNet:
   | Setting | Value |
@@ -99,7 +99,7 @@ Associate NSGs with respective subnets.
 
 ---
 
-## ✅ Step 4:— Deploy Virtual Machines
+## 🔹 Step 4:— Deploy Virtual Machines
 
 ### Linux Web Server VM:
   | Setting | Value |
@@ -132,7 +132,7 @@ Install IIS:
 
 ---
 
-## ✅ Step 5:- Create Azure Load Balancer
+## 🔹 Step 5:- Create Azure Load Balancer
   | Setting | Value |
   |-----|-----|
   | Name | azure-vm-lb |
@@ -146,7 +146,7 @@ Install IIS:
 
 ---
 
-## ✅ Step 6:- Create Storage & Backup
+## 🔹 Step 6:- Create Storage & Backup
 
 ### Create Storage Account:
   | Setting | Value |
@@ -176,7 +176,7 @@ Backup → Azure VM → Select both VMs → Daily backup policy.
 
 ---
 
-## ✅ Step 7:— Monitoring & Alerts
+## 🔹 Step 7:— Monitoring & Alerts
 
 ### Create Log Analytics Workspace
 - Name: law-enterprise
@@ -205,7 +205,7 @@ Azure Monitor → Alerts → Create Rule
 
 ---
 
-## ✅ Step 7:— Hybrid Connectivity (Simulation)
+## 🔹 Step 7:— Hybrid Connectivity (Simulation)
 
 ### Point-to-Site VPN
 
@@ -222,7 +222,7 @@ Test: ping VM private IP
 
 ---
 
-## ✅ Step 9:— Security Hardening
+## 🔹 Step 9:— Security Hardening
 
 Enable:
 - Defender for Cloud (Free Tier)
@@ -232,7 +232,7 @@ Enable:
 
 ---
 
-## ✅ Step 10:— Network Troubleshooting
+## 🔹 Step 10:— Network Troubleshooting
 Use Network Watcher:
 - IP Flow Verify
 - Next Hop
