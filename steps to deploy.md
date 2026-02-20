@@ -218,3 +218,13 @@ Create VPN Gateway:
 Download VPN client and connect.
 
 Test: ping VM private IP
+
+---
+
+## ✅ Step 9:— Security Hardening
+
+Enable:
+- Defender for Cloud (Free Tier)
+- Just-In-Time VM Access
+- Remove Public IPs
+- Access via VPN/Bastion only
