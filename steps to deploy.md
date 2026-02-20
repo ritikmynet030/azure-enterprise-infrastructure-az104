@@ -36,6 +36,9 @@ Resource Group → Access Control (IAM)
 | Reader | auditor-user |
 | Virtual Machine Contributor | ops-user |
 
+📸 Screenshot:  
+![AD User Role](add-user-role-assign.png)
+
 ---
 
 ### Apply Azure Policy
@@ -62,15 +65,23 @@ Assign:
   |-----|-----|
   | GatewaySubnet | 10.0.0.0/24 |
   | AzureBastionSubnet | 10.0.1.0/24 |
-  
+
+📸 Screenshot:  
+![Hub Vnet](hub-vnet-subnet-created.png)
+
 ---
 
-### Create SPOKE VNet:
+### Create Prod VNet & Subnet:
   | Setting | Value |
   |-----|-----|
+  | Vnet Name | vnet-prod |
+  | Address Space | 10.1.0.0/24 |
   | Websubnet | 10.1.1.0/24 |
   | Appsubnet | 10.1.2.0/24 |
-  
+
+📸 Screenshot:  
+![Prod Vnet](prod-vnet-subnet-created.png)
+
 ---
 
 ## Configure VNet Peering
@@ -89,11 +100,19 @@ Allow:
 - SSH 22
 - HTTP 80
 
+📸 Screenshot:  
+![Web NSG](nsg-web-inbound-rules.png)
+
+
 ### nsg-app
 
 Allow:
 - RDP 3389
 - VirtualNetwork traffic
+
+📸 Screenshot:  
+![App NSG](nsg-app-inbound-rules.png)
+
 
 Associate NSGs with respective subnets.
 
@@ -117,6 +136,10 @@ Connect using SSH and run:
 Test:
 - http://<<VM-public-ip>>
 
+📸 Screenshot:  
+![Linux Output](linux-http-pip-output.png)
+
+
 ### Windows Application VM:
   | Setting | Value |
   |------|------|
@@ -129,6 +152,12 @@ Test:
 Connect using RDP
 Install IIS:
 - Install-WindowsFeature -name Web-Server -IncludeManagementTools
+
+Test:
+- http://<<VM-public-ip>>
+
+📸 Screenshot:  
+![IIS Output](IIS-win-http-pip-output.png)
 
 ---
 
@@ -173,6 +202,9 @@ Create Recovery Services Vault:
 - Name: rsv-enterprise
 
 Backup → Azure VM → Select both VMs → Daily backup policy.
+
+📸 Screenshot:  
+![RSV](rsv-enterprise-vm-backup.png)
 
 ---
 
