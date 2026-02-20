@@ -1,0 +1,20 @@
+Internet
+   ↓
+Load Balancer
+   ↓
+Linux VM (Web)
+   ↓
+Windows VM (App)
+
+Hub VNet
+ ├── VPN Gateway
+ └── Bastion
+
+Spoke VNet
+ ├── Web Subnet
+ └── App Subnet
+
+Shared Services
+ ├── Storage
+ ├── Log Analytics
+ └── Recovery Vault
