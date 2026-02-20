@@ -228,3 +228,23 @@ Enable:
 - Just-In-Time VM Access
 - Remove Public IPs
 - Access via VPN/Bastion only
+
+---
+
+## ✅ Step 10:— Network Troubleshooting
+Use Network Watcher:
+- IP Flow Verify
+- Next Hop
+- Connection Troubleshoot
+- Packet Capture
+
+---
+
+## ✅ FINAL VALIDATION CHECKLIST
+
+- Website accessible via Load Balancer
+- VM backup successful
+- Alerts triggered
+- VPN connectivity working
+- Policy compliance verified
+- Monitoring enabled
