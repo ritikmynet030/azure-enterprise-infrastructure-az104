@@ -57,3 +57,24 @@ Assign:
   | Address space | 10.0.0.0/16 |
 
 ### Subnets:
+  | Setting | Value |
+  |-----|-----|
+  | GatewaySubnet | 10.0.0.0/24 |
+  | AzureBastionSubnet | 10.0.1.0/24 |
+  
+---
+
+### Create SPOKE VNet:
+  | Setting | Value |
+  |-----|-----|
+  | Websubnet | 10.1.1.0/24 |
+  | Appsubnet | 10.1.2.0/24 |
+  
+---
+
+## Configure VNet Peering
+
+Create bidirectional peering:
+- vnet-hub ↔ vnet-prod
+- Enable traffic forwarding
+  
