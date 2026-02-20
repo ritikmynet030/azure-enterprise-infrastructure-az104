@@ -37,7 +37,7 @@ Resource Group → Access Control (IAM)
 | Virtual Machine Contributor | ops-user |
 
 📸 Screenshot:  
-![AD User Role](add-user-role-assign.png)
+![AD User Role](ad-user-role-assign.png)
 
 ---
 
@@ -80,7 +80,7 @@ Assign:
   | Appsubnet | 10.1.2.0/24 |
 
 📸 Screenshot:  
-![Prod Vnet](prod-vnet-subnet-created.png)
+![Prod Vnet](prob-vnet-subnet-created.png)
 
 ---
 
