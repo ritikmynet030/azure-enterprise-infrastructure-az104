@@ -52,7 +52,7 @@ Assign:
 
 ---
 
-## 🔹 Step 3:— Create Hub-Prod  V-Net & NSG
+## 🔹 Step 3:— Create Hub-Prod V-Net & NSG
 
 ### Create HUB VNet:
   | Setting | Value |
