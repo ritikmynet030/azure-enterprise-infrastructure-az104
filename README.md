@@ -80,12 +80,12 @@ Linux web servers deployed behind Azure Load Balancer ensuring continuous servic
 
 ## 🎯 Skills Demonstrated
 
-Azure Administration (AZ-104)
-Cloud Networking Architecture
-Hybrid Connectivity
-Monitoring & Governance
-Infrastructure Security
-Disaster Recovery Planning
+- Azure Administration (AZ-104)
+- Cloud Networking Architecture
+- Hybrid Connectivity
+- Monitoring & Governance
+- Infrastructure Security
+- Disaster Recovery Planning
 
 ---
 
